@@ -9,5 +9,5 @@ require "config.idl"
 
 interface Configurable
 {
-    in configure(Config) -> void;
+    in configure(Config) -> none;
 }

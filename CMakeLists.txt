@@ -10,7 +10,7 @@ file(GLOB_RECURSE INC include/*)
 file(GLOB_RECURSE SRC src/*)
 file(GLOB_RECURSE IDL idl/*)
 
-add_library(${UNAME} SHARED ${INC} ${SRC})
+add_library(${UNAME} SHARED ${INC} ${SRC} ${IDL})
 dciIntegrationSetupTarget(${UNAME})
 target_include_directories(${UNAME} PRIVATE src)
 
